@@ -13,8 +13,7 @@
        <string>1</string>
        <key>CFBundleShortVersionString</key>
        <string>1.0.0</string>
-       <key>URL</key>
-       <string>https://github.com/downloads/randomsequence/Canonical-URLs-Safari-Extension/CanonicalURLs.1.0.0.safariextz</string>
+       <key>URL</key>       <string>https://github.com/randomsequence/Canonical-URLs-Safari-Extension/releases/download/v1.0.0/Canonical.URLs.safariextz</string>
      </dict>
    </array>
 </dict>
