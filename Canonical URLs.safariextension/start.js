@@ -21,17 +21,23 @@
 var url = document.location.href;
 var cannonicalURL = null;
 
-var cannonicalEbay = function (url) {
-  var cannonicalURL = null;
-  var regex = new RegExp("www\.ebay\.(co\.uk|com)\/itm/[0-9a-zA-Z-]+/([0-9]{12,})\?.*", "g");
-  var matches = regex.exec(url);
-  if (null !== matches) {
-    cannonicalURL = url.replace(regex, "www.ebay.$1/itm/$2");
-  }  
-  return cannonicalURL;
+var redirectFunction = function regexRedirect (matchPattern, replacePattern) {
+  return function (url) {
+    var cannonicalURL = null;
+    var regex = new RegExp(matchPattern, "g");
+    var matches = regex.exec(url);
+    if (null !== matches) {
+      cannonicalURL = url.replace(regex, replacePattern);
+    }  
+    return cannonicalURL;
+  }
 }
 
-var redirects = [cannonicalEbay];
+var cannonicalEbay = redirectFunction("www\.ebay\.(co\.uk|com)\/itm/[0-9a-zA-Z-]+/([0-9]{12,})\?.*", "www.ebay.$1/itm/$2");
+
+var cannonicalAmazon = redirectFunction("www\.amazon\.(co\.uk|com)\/[0-9a-zA-Z-]+/dp/([0-9A-Z]{10,})\?.*", "www.amazon.$1/dp/$2");
+
+var redirects = [cannonicalEbay, cannonicalAmazon];
 
 while (redirects.length > 0 && cannonicalURL == null) {
 	cannonicalURL = redirects.pop()(url);;

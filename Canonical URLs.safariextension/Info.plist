@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Johnnie Walker</string>
 	<key>Builder Version</key>
-	<string>10600.1.25</string>
+	<string>10600.2.5</string>
 	<key>CFBundleDisplayName</key>
 	<string>Canonical URLs</string>
 	<key>CFBundleIdentifier</key>
@@ -40,6 +40,8 @@
 		<dict>
 			<key>Allowed Domains</key>
 			<array>
+				<string>www.amazon.co.uk</string>
+				<string>www.amazon.com</string>
 				<string>www.ebay.co.uk</string>
 				<string>www.ebay.com</string>
 			</array>
