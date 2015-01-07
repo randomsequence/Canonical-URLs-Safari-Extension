@@ -12,5 +12,6 @@ Becomes:
 ##Supported URLs
 
 * ebay (UK & US) Items
+* Amazon (UK & US) Products
 
 Pull requests welcome!
