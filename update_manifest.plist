@@ -10,10 +10,10 @@
        <key>Developer Identifier</key>
        <string>5LK9F8X9QB</string>
        <key>CFBundleVersion</key>
-       <string>1</string>
+       <string>2</string>
        <key>CFBundleShortVersionString</key>
-       <string>1.0.0</string>
-       <key>URL</key>       <string>https://github.com/randomsequence/Canonical-URLs-Safari-Extension/releases/download/v1.0.0/Canonical.URLs.safariextz</string>
+       <string>1.1.0</string>
+       <key>URL</key>       <string>https://github.com/randomsequence/Canonical-URLs-Safari-Extension/releases/download/v1.1.0/Canonical.URLs.safariextz</string>
      </dict>
    </array>
 </dict>
